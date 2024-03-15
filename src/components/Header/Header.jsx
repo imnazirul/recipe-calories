@@ -7,7 +7,7 @@ function Header() {
         <a className="btn btn-ghost  font-bold text-2xl">Recipe Calories</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 text-[#150B2BB3] text-lg">
+        <ul className="menu menu-horizontal px-1 text-[#150B2BB3] text-[17px]">
           <li>
             <a>Home</a>
           </li>
@@ -24,10 +24,10 @@ function Header() {
         </ul>
       </div>
       <div className="navbar-end">
-        <div className="bg-[#150B2B0D] flex gap-1 h-12 items-center p-2 rounded-2xl">
+        <div className="bg-[#150B2B0D] flex gap-1 h-12 items-center px-2 rounded-2xl">
           <img className="h-6" src={search} alt="" />
           <input
-            className="bg-transparent h-full outline-none text-lg"
+            className="bg-transparent h-full outline-none text-[17px]"
             type="text"
             placeholder="Search"
           />

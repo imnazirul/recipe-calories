@@ -8,9 +8,10 @@ function Banner() {
             Discover an exceptional cooking class tailored for you!
           </h1>
           <p className="text-white text-lg">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+            Welcome to Recipe Calories, your go-to destination for delicious
+            recipes with detailed nutritional information. Discover
+            mouthwatering dishes while managing your calorie intake
+            effortlessly. Lets cook and eat smarter together!
           </p>
           <button className="btn hover:bg-transparent hover:text-white bg-[#0BE58A] text-[#150B2B] mr-5">
             Explore Now
