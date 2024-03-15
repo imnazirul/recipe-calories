@@ -1,24 +1,18 @@
 import Card from "../Card/Card";
+import RecipeDetails from "../RecipeDetails/RecipeDetails";
+import RecipeProcess from "../RecipeProcess/RecipeProcess";
 
 const Recipes = () => {
   return (
-    <div className="mb-10">
-      <h1 className="text-[#150B2B] text-4xl font-semibold text-center mb-5">
-        Our Recipes
-      </h1>
-      <p
-        className="text-[#150B2B99
-] max-w-4xl mb-5 mx-auto text-center"
-      >
-        Discover delicious recipes on our website! From hearty soups to decadent
-        desserts, explore a variety of dishes with detailed calorie information
-        to help you maintain a healthy lifestyle. Start cooking now!
-      </p>
+    <div className="mb-10 ">
+      <RecipeDetails></RecipeDetails>
+      <div className="flex gap-5">
+        <div className="grid grid-cols-2 gap-3 w-2/3">
+          <Card></Card>
+          <Card></Card>
+        </div>
 
-      <div className="grid grid-cols-3 gap-3 ">
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
+        <RecipeProcess></RecipeProcess>
       </div>
     </div>
   );
