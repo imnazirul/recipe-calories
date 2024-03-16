@@ -1,22 +1,10 @@
-import TableRow from "../TableRow/TableRow";
-
+import PendingCook from "../PendingCook/PendingCook";
+import CompletedCook from "../CompletedCook/CompletedCook";
 const RecipeProcess = () => {
   return (
-    <div className="w-1/3">
-      <h1>Want to cook: 01</h1>
-
-      <table className="mx-auto">
-        <thead>
-          <tr>
-            <td>Name</td>
-            <td>Time</td>
-            <td>Calories</td>
-          </tr>
-        </thead>
-        <tbody>
-          <TableRow></TableRow>
-        </tbody>
-      </table>
+    <div className="border border-[#28282833] rounded-xl p-3 w-1/3">
+      <PendingCook></PendingCook>
+      <CompletedCook></CompletedCook>
     </div>
   );
 };
