@@ -1,6 +1,6 @@
 function Banner() {
   return (
-    <div className="hero bg-[url(https://i.ibb.co/sW6MQxC/Rectangle-1.png)] h-[500px] rounded-3xl overflow-hidden">
+    <div className="hero bg-[url(https://i.ibb.co/sW6MQxC/Rectangle-1.png)] h-[550px] rounded-3xl overflow-hidden">
       <div className="bg-cover bg-opacity-60"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-4xl space-y-6">

@@ -3,7 +3,7 @@ import CalorieImg from "./../../assets/Frame (3).png";
 import PropTypes from "prop-types";
 import IngredientsLi from "../IngredientsLi/IngredientsLi";
 
-const Card = ({ card }) => {
+const Card = ({ card, handleWantToCook }) => {
   const {
     recipe_image,
     recipe_name,
@@ -46,7 +46,10 @@ const Card = ({ card }) => {
               {calories} calories
             </p>
           </div>
-          <button className="btn hover:bg-transparent  bg-[#0BE58A] text-[#150B2B] rounded-3xl px-5 hover:border-[#0BE58A]">
+          <button
+            onClick={() => handleWantToCook(card)}
+            className="btn hover:bg-transparent  bg-[#0BE58A] text-[#150B2B] rounded-3xl px-5 hover:border-[#0BE58A]"
+          >
             Want to Cook
           </button>
         </div>
@@ -59,4 +62,5 @@ export default Card;
 
 Card.propTypes = {
   card: PropTypes.object,
+  handleWantToCook: PropTypes.func,
 };

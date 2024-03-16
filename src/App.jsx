@@ -4,11 +4,11 @@ import Recipes from "./components/Recipes/Recipes";
 function App() {
   return (
     <>
-      <header className="container px-5 lg:px-24 pt-5 mx-auto mb-10 lg:mb-20">
+      <header className="container px-5  pt-5 mx-auto mb-10 lg:mb-20">
         <Header></Header>
         <Banner></Banner>
       </header>
-      <main className="container px-5 lg:px-24 pt-5 mx-auto">
+      <main className="container px-5  pt-5 mx-auto">
         <Recipes></Recipes>
       </main>
     </>
