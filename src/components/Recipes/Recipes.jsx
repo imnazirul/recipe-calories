@@ -41,7 +41,10 @@ const Recipes = () => {
           })}
         </div>
         <ToastContainer />
-        <RecipeProcess cardData={cardData}></RecipeProcess>
+        <RecipeProcess
+          setCardData={setCardData}
+          cardData={cardData}
+        ></RecipeProcess>
       </div>
     </div>
   );

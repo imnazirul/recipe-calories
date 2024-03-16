@@ -1,7 +1,7 @@
 import TableRow from "../TableRow/TableRow";
 import PropTypes from "prop-types";
 
-const PendingCook = ({ cardData }) => {
+const PendingCook = ({ cardData, handlePreparing }) => {
   return (
     <div className="mb-10">
       <h1 className="text-[#282828] font-semibold text-2xl text-center mb-5">
@@ -18,7 +18,12 @@ const PendingCook = ({ cardData }) => {
         </thead>
         <tbody>
           {cardData?.map((data, idx) => (
-            <TableRow key={idx} index={idx} data={data}></TableRow>
+            <TableRow
+              handlePreparing={handlePreparing}
+              key={idx}
+              index={idx}
+              data={data}
+            ></TableRow>
           ))}
         </tbody>
       </table>
@@ -30,4 +35,5 @@ export default PendingCook;
 
 PendingCook.propTypes = {
   cardData: PropTypes.array,
+  handlePreparing: PropTypes.func,
 };

@@ -1,8 +1,11 @@
-const CurrentCook = () => {
+import TableRowTwo from "../TableRowTwo/TableRowTwo";
+import PropTypes from "prop-types";
+
+const CurrentCook = ({ currentCookData }) => {
   return (
     <div className="">
       <h1 className="text-[#282828] font-semibold text-2xl text-center mb-5">
-        Currently cooking: 02
+        Currently cooking: {currentCookData.length}
       </h1>
       <hr />
       <table className="mx-auto">
@@ -13,7 +16,13 @@ const CurrentCook = () => {
             <td>Calories</td>
           </tr>
         </thead>
-        <tbody className="px-2 "></tbody>
+        <tbody className="px-2 ">
+          {currentCookData.map((data, idx) => {
+            return (
+              <TableRowTwo key={idx} data={data} index={idx}></TableRowTwo>
+            );
+          })}
+        </tbody>
       </table>
 
       <div className="w-full flex justify-end">
@@ -31,3 +40,7 @@ const CurrentCook = () => {
 };
 
 export default CurrentCook;
+
+CurrentCook.propTypes = {
+  currentCookData: PropTypes.array,
+};
