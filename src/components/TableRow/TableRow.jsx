@@ -8,7 +8,7 @@ const TableRow = ({ data, index, handlePreparing }) => {
     <tr className="text-[#282828B3] bg-[#2828280D] ">
       <td className="flex items-center">
         <span className="text-[#282828CC] font-semibold mr-3">{index + 1}</span>
-        <p>{recipe_name}</p>
+        <p className="max-w-24">{recipe_name}</p>
       </td>
 
       <td>{preparing_time} minutes</td>

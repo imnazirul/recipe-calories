@@ -5,6 +5,7 @@ import { useState } from "react";
 
 const RecipeProcess = ({ cardData, setCardData }) => {
   const [currentCookData, setCurrentCookData] = useState([]);
+  const [value, setValue] = useState(false);
 
   const handlePreparing = (data) => {
     const newData = cardData.filter((singleData) => {
@@ -13,14 +14,21 @@ const RecipeProcess = ({ cardData, setCardData }) => {
     setCardData(newData);
     const newCurrentArr = [...currentCookData, data];
     setCurrentCookData(newCurrentArr);
+
+    let newValue = !value;
+    setValue(newValue);
   };
+
   return (
     <div className="border border-[#28282833] rounded-xl p-3 w-1/3 flex-1">
       <PendingCook
         handlePreparing={handlePreparing}
         cardData={cardData}
       ></PendingCook>
-      <CurrentCook currentCookData={currentCookData}></CurrentCook>
+      <CurrentCook
+        value={value}
+        currentCookData={currentCookData}
+      ></CurrentCook>
     </div>
   );
 };

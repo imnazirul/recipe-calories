@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "./tabletwo.css";
 
 const TableRowTwo = ({ data, index }) => {
   const { recipe_name, calories, preparing_time } = data;
