@@ -20,7 +20,7 @@ const RecipeProcess = ({ cardData, setCardData }) => {
   };
 
   return (
-    <div className="border border-[#28282833] rounded-xl p-3 w-1/3 flex-1">
+    <div className="border border-[#28282833] rounded-xl p-3 lg:w-1/3 flex-1">
       <PendingCook
         handlePreparing={handlePreparing}
         cardData={cardData}

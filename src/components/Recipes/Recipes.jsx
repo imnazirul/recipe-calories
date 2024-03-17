@@ -28,8 +28,8 @@ const Recipes = () => {
   return (
     <div className="mb-10 ">
       <RecipeDetails></RecipeDetails>
-      <div className="flex gap-5">
-        <div className="grid grid-cols-2 gap-3 w-2/3">
+      <div className="flex flex-col lg:flex-row gap-5">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:w-2/3">
           {data.map((cardData, idx) => {
             return (
               <Card

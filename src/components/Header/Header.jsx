@@ -24,7 +24,7 @@ function Header() {
         </ul>
       </div>
       <div className="navbar-end">
-        <div className="bg-[#150B2B0D] flex gap-1 h-12 items-center px-2 rounded-2xl">
+        <div className="bg-[#150B2B0D]  gap-1 h-12 items-center px-2 rounded-2xl hidden lg:flex">
           <img className="h-6" src={search} alt="" />
           <input
             className="bg-transparent h-full outline-none text-[17px]"
