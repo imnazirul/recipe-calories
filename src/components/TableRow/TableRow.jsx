@@ -5,7 +5,7 @@ const TableRow = ({ data, index, handlePreparing }) => {
   const { recipe_name, calories, preparing_time } = data;
 
   return (
-    <tr className="text-[#282828B3] bg-[#2828280D] flex ">
+    <tr className="text-[#282828B3] bg-[#2828280D]  ">
       <td className="flex items-center">
         <span className="text-[#282828CC] font-semibold mr-3">{index + 1}</span>
         <p className="max-w-24">{recipe_name}</p>
